@@ -1,13 +1,13 @@
 #include "main.h"
 /**
- * _strcat - a pointer function that concatenates two strings
+ * _strcat - a pointer function concatenates two strings
  * @dest: input
- * @src: input
+ * @src: input value
  *
- * Return: a pointer to the resulting string dest
+ * Return: void
  */
- char *_strcat(char *dest, char *src)
- {
+char *_strcat(char *dest, char *src)
+{
 	int s1, s2;
 
 	s1 = 0;
