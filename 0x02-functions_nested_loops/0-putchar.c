@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * main - prints "_putchar" 
+ * is written by Aalaa
  * Return: 0
  */
 
