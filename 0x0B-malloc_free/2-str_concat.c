@@ -2,14 +2,14 @@
 #include <stdlib.h>
 
 /**
- * str_concat - concatenates two strings & get ends of input and add together
+ * str_concat - concatenates two strings
  * @s1: input one to concat
  * @s2: input two to concat
- * Return: NULL on failure otherwise concat of s1 and s2
+ * Return: NULL on failure
  */
 char *str_concat(char *s1, char *s2)
 {
-	char *con;
+	char *conct;
 	int i, c;
 
 	if (s1 == NULL)
@@ -17,25 +17,27 @@ char *str_concat(char *s1, char *s2)
 	if (s2 == NULL)
 		s2 = "";
 
-	for (i = 0; s1[i] != '\0'; i++)
+	i = c = 0;
+	while (s1[i] != '\0')
+		i++;
+	while (s2[c] != '\0')
+		c++;
+	conct = malloc(sizeof(char) * (i + c + 1));
 
-		for (c = 0; s2[c] != '\0'; c++)
-		con = malloc(sizeof(char) * (i + c + 1));
-
-	if (con == NULL)
+	if (conct == NULL)
 		return (NULL);
 	i = c = 0;
 	while (s1[i] != '\0')
 	{
-		con[i] = s1[i];
+		conct[i] = s1[i];
 		i++;
 	}
 
 	while (s2[c] != '\0')
 	{
-		con[i] = s2[c];
+		conct[i] = s2[c];
 		i++, c++;
 	}
-	con[i] = '\0';
-	return (con);
+	conct[i] = '\0';
+	return (conct);
 }
