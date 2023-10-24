@@ -12,9 +12,9 @@ size_t no = 0;
 
 	while (h)
 	{
-		printf("%d\n", h->n);
-		no++;
-		h = h->next;
+	printf("%d\n", h->n);
+	no++;
+	h = h->next;
 	}
 
 return (no);
