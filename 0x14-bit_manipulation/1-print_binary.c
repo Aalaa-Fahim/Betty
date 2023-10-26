@@ -12,8 +12,8 @@ for (int num = 0; b; n++)
 {
 	if (n & 1L << --b)
 		_putchar('1');
-
-	else if (num || !num)
-		_putchar('0');
 }
+
+if (num || !num)
+	_putchar('0');
 }
