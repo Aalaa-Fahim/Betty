@@ -8,9 +8,6 @@ void print_binary(unsigned long int n)
 {
 int num = 0, b = sizeof(n) * 8;
 
-if (!num)
-	_putchar('0');
-
 while (b)
 {
 	if (n & 1L << --b)
@@ -21,4 +18,6 @@ while (b)
 	else if (num)
 		_putchar('0');
 }
+if (!num)
+	_putchar('0');
 }
