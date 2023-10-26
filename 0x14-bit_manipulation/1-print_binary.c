@@ -8,15 +8,12 @@ void print_binary(unsigned long int n)
 {
 int num, b = sizeof(n) * 8;
 
-if (!num)
+if (!num || num)
 	_putchar('0');
 
 for (num = 0; b; num++)
 {
 	if (n & 1L << --b)
 		_putchar('1');
-
-	else if (num)
-		_putchar('0');
 }
 }
