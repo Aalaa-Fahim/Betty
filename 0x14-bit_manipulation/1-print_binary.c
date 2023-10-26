@@ -6,9 +6,9 @@
  */
 void print_binary(unsigned long int n)
 {
-int b = sizeof(n) * 8;
+int num, b = sizeof(n) * 8;
 
-for (int num = 0; b; n++)
+for (num = 0; b; n++)
 {
 	if (n & 1L << --b)
 		_putchar('1');
