@@ -1,11 +1,12 @@
 #include "main.h"
 
 /**
- * main - check the code
- * @argc: number of arguments
+ * error_file - checks if files will open.
+ * @file_from: file to copy from
+ * @file_to: file to copy to
  * @argv: arguments vector
  *
- * Return: Always 0.
+ * Return: no return.
  */
 void error_file(int file_from, int file_to, char *argv[])
 {
@@ -21,6 +22,13 @@ void error_file(int file_from, int file_to, char *argv[])
 	}
 }
 
+/**
+ * main - check the code
+ * @argc: number of arguments
+ * @argv: arguments vector
+ *
+ * Return: Always 0.
+ */
 int main(int argc, char *argv[])
 {
 	int file_from, file_to, err;
