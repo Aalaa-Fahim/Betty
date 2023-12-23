@@ -22,5 +22,5 @@ if (hash_table->array == NULL)
 }
 for (n = 0; n < size; n++)
 	hash_table->array[n] = NULL;
-return hash_table;
+return (hash_table);
 }
