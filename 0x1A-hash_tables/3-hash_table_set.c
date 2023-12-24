@@ -27,7 +27,7 @@ if (node->value == NULL)
 	free (node);
 	return (NULL);
 }
-node->key == NULL;
+node->next == NULL;
 return (node);
 }
 
@@ -45,7 +45,7 @@ unsigned long int i;
 hash_table_t *h_node, *tmp;
 char *new_value;
 
-if(ht == NULL || ht->array == NULL || ht->size == 0 ||
+if (ht == NULL || ht->array == NULL || ht->size == 0 ||
     key == NULL || strlen(key) == 0 || value == NULL)
 	return (0);
 i = key_index((const unsigned char *)key, ht->size);
