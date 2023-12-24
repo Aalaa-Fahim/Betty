@@ -7,7 +7,7 @@
  *
  * Return: the new node.
  */
-hash_node_t *hash_node(const char *key, const char *value)
+hash_node_t *create_hash_node(const char *key, const char *value)
 {
 hash_node_t *node;
 
@@ -27,7 +27,7 @@ if (node->value == NULL)
 	free(node);
 	return (NULL);
 }
-node->next == NULL;
+node->next = NULL;
 return (node);
 }
 
@@ -42,7 +42,7 @@ return (node);
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 unsigned long int i;
-hash_table_t *h_node, *tmp;
+hash_node_t *h_node, *tmp;
 char *new_value;
 
 if (ht == NULL || ht->array == NULL || ht->size == 0 ||
@@ -63,7 +63,7 @@ while (tmp != NULL)
 	}
 	tmp = tmp->next;
 }
-h_node = hash_node(key, value);
+h_node = create_hash_node(key, value);
 if (h_node == NULL)
 	return (0);
 h_node->next = ht->array[i];
