@@ -17,14 +17,14 @@ if (node == NULL)
 node->key = strdup(key);
 if (node->key == NULL)
 {
-	free (node);
+	free(node);
 	return (NULL);
 }
 node->value = strdup(value);
 if (node->value == NULL)
 {
-	free (node->key);
-	free (node);
+	free(node->key);
+	free(node);
 	return (NULL);
 }
 node->next == NULL;
