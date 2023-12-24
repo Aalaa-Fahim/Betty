@@ -31,7 +31,6 @@ hash_node_t *create_hash_node(const char *key, const char *value)
 	return (node);
 }
 
-
 /**
  * hash_node_set - adds an element to the hash table
  * @ht: the hash table.
