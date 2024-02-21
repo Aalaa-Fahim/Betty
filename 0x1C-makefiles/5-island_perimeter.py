@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """A module for Island Perimeter"""
 
+
 def island_perimeter(grid):
     """
     Method that returns the perimeter of the island described in grid
