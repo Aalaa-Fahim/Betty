@@ -1,0 +1,11 @@
+The time complexity of a linear search in an array of size (n) is (O(n)) in the worst case. This means that in the worst-case scenario, the algorithm will need to compare the target element with every single element in the array before concluding that the element is not present or is located at the last position in the array.
+
+Here's a breakdown of why the worst-case time complexity is (O(n)):
+
+- Best Case: The best-case scenario for a linear search occurs when the target element is found at the first position in the array. In this case, the algorithm only needs to perform one comparison, resulting in a time complexity of (O(1)).
+
+- Worst Case: The worst-case scenario occurs when the target element is not present in the array or is located at the last position. In this scenario, the algorithm must compare the target element with every element in the array, leading to (n) comparisons in total. Since the number of comparisons grows linearly with the size of the array, the time complexity is (O(n)).
+
+- Average Case: On average, the linear search algorithm will need to examine approximately half of the elements in the array before finding the target element or determining that it is not present. However, because the number of elements examined is proportional to the size of the array, the average time complexity is also (O(n)).
+
+In summary, the linear search algorithm's worst-case time complexity is (O(n)), indicating that the algorithm's performance degrades linearly with the size of the input array. This makes linear search less efficient for large datasets compared to more sophisticated search algorithms like binary search, which can achieve (O(\log n)) time complexity under certain conditions.
